@@ -414,6 +414,7 @@
     <None Include="SimpleSample.fx" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HyperRanket.h" />
     <CLInclude Include="resource.h" />
     <ResourceCompile Include="SimpleSample.rc" />
   </ItemGroup>

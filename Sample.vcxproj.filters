@@ -90,6 +90,9 @@
     <ClInclude Include="..\..\..\DXUT\Optional\SDKmisc.h">
       <Filter>DXUT</Filter>
     </ClInclude>
+    <ClInclude Include="HyperRanket.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
