@@ -31,6 +31,7 @@ CDXUTDialog                 AUI;             // dialog for sample specific contr
 ID3DXFont*                  Font = NULL;
 ID3DXSprite*                Sprite = NULL;
 ID3DXEffect*                Effect = NULL;
+
 D3DXHANDLE                  WorldProjection;
 D3DXHANDLE                  World;
 D3DXHANDLE                  TimeHandler;
@@ -95,11 +96,11 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdL
     DXUTSetCallbackD3D9FrameRender( OnD3D9FrameRender );
 
     InitApp();
-    DXUTInit( true, true, NULL ); // Parse the command line, show msgboxes on error, no extra command line params
-    DXUTSetCursorSettings( true, true );
-    DXUTCreateWindow( L"SimpleSample" );
-    DXUTCreateDevice( true, 640, 480 );
-    DXUTMainLoop(); // Enter into the DXUT render loop
+	InitDirectUtility(true, true, NULL); // Parse the command line, show msgboxes on error, no extra command line params
+	SetDirectCursor(true, true);
+	CreateDirectWindow(L"整理过的函数定义");
+	CreateDirectDevice(true, 640, 480);
+	RenderLoopMain(); // Enter into the DXUT render loop	//	DXUTMainLoop();  
 
     return DXUTGetExitCode();
 }
@@ -195,10 +196,10 @@ bool CALLBACK ModifyDeviceSettings( DXUTDeviceSettings* pDeviceSettings, void* p
     }
 
     // For the first device created if its a REF device, optionally display a warning dialog box
-    static bool s_bFirstTime = true;
-    if( s_bFirstTime )
+    static bool firstTime = true;
+    if( firstTime )
     {
-        s_bFirstTime = false;
+        firstTime = false;
         if( ( DXUT_D3D9_DEVICE == pDeviceSettings->ver && pDeviceSettings->d3d9.DeviceType == D3DDEVTYPE_REF ) ||
             ( DXUT_D3D10_DEVICE == pDeviceSettings->ver &&
               pDeviceSettings->d3d10.DriverType == D3D10_DRIVER_TYPE_REFERENCE ) )
@@ -218,10 +219,10 @@ HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURF
 {
     HRESULT hr;
 
-    V_RETURN( resourceManager.OnD3D9CreateDevice( pd3dDevice ) );
-    V_RETURN( settingDialog.OnD3D9CreateDevice( pd3dDevice ) );
+	TraceBack( resourceManager.OnD3D9CreateDevice( pd3dDevice ) );
+	TraceBack( settingDialog.OnD3D9CreateDevice( pd3dDevice ) );
 
-    V_RETURN( D3DXCreateFont( pd3dDevice, 15, 0, FW_BOLD, 1, FALSE, DEFAULT_CHARSET,
+	TraceBack( D3DXCreateFont( pd3dDevice, 15, 0, FW_BOLD, 1, FALSE, DEFAULT_CHARSET,
                               OUT_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_DONTCARE,
                               L"Arial", &Font ) );
 
@@ -239,8 +240,8 @@ HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURF
     dwShaderFlags |= D3DXFX_LARGEADDRESSAWARE;
 #endif
 
-    V_RETURN( DXUTFindDXSDKMediaFileCch( str, MAX_PATH, L"SimpleSample.fx" ) );
-    V_RETURN( D3DXCreateEffectFromFile( pd3dDevice, str, NULL, NULL, dwShaderFlags,
+	TraceBack( DXUTFindDXSDKMediaFileCch( str, MAX_PATH, L"SimpleSample.fx" ) );
+	TraceBack( D3DXCreateEffectFromFile( pd3dDevice, str, NULL, NULL, dwShaderFlags,
                                         NULL, &Effect, NULL ) );
 
     WorldProjection = Effect->GetParameterByName( NULL, "g_mWorldViewProjection" );
@@ -265,13 +266,13 @@ HRESULT CALLBACK OnD3D9ResetDevice( IDirect3DDevice9* pd3dDevice,
 {
     HRESULT hr;
 
-    V_RETURN( resourceManager.OnD3D9ResetDevice() );
-    V_RETURN( settingDialog.OnD3D9ResetDevice() );
+	TraceBack( resourceManager.OnD3D9ResetDevice() );
+	TraceBack( settingDialog.OnD3D9ResetDevice() );
 
-    if( Font ) V_RETURN( Font->OnResetDevice() );
-    if( Effect ) V_RETURN( Effect->OnResetDevice() );
+    if( Font ) TraceBack( Font->OnResetDevice() );
+    if( Effect ) TraceBack( Effect->OnResetDevice() );
 
-    V_RETURN( D3DXCreateSprite( pd3dDevice, &Sprite ) );
+	TraceBack( D3DXCreateSprite( pd3dDevice, &Sprite ) );
     textHelper = new CDXUTTextHelper( Font, Sprite, NULL, NULL, 15 );
 
     // Setup the camera's projection parameters
@@ -350,12 +351,12 @@ void CALLBACK OnD3D9FrameRender( IDirect3DDevice9* pd3dDevice, double fTime, flo
 //--------------------------------------------------------------------------------------
 // Handle messages to the application
 //--------------------------------------------------------------------------------------
-LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bool* pbNoFurtherProcessing,
+LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bool* noFurtherProcessing,
                           void* pUserContext )
 {
     // Pass messages to dialog resource manager calls so GUI state is updated correctly
-    *pbNoFurtherProcessing = resourceManager.MsgProc( hWnd, uMsg, wParam, lParam );
-    if( *pbNoFurtherProcessing )
+    *noFurtherProcessing = resourceManager.MsgProc( hWnd, uMsg, wParam, lParam );
+    if( *noFurtherProcessing )
         return 0;
 
     // Pass messages to settings dialog if its active
@@ -366,11 +367,11 @@ LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bo
     }
 
     // Give the dialogs a chance to handle the message first
-    *pbNoFurtherProcessing = HUD.MsgProc( hWnd, uMsg, wParam, lParam );
-    if( *pbNoFurtherProcessing )
+    *noFurtherProcessing = HUD.MsgProc( hWnd, uMsg, wParam, lParam );
+    if( *noFurtherProcessing )
         return 0;
-    *pbNoFurtherProcessing = AUI.MsgProc( hWnd, uMsg, wParam, lParam );
-    if( *pbNoFurtherProcessing )
+    *noFurtherProcessing = AUI.MsgProc( hWnd, uMsg, wParam, lParam );
+    if( *noFurtherProcessing )
         return 0;
 
     // Pass all remaining windows messages to camera so it can respond to user input
