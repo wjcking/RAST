@@ -23,14 +23,14 @@
 ModelViewerCamera          Camera;               // A model viewing camera
 CDXUTDialogResourceManager  resourceManager; // manager for shared resources of dialogs
 CD3DSettingsDlg             settingDialog;          // Device settings dialog
-CDXUTTextHelper*            textHelper = NULL;
+CDXUTTextHelper*            textHelper = nullptr;
 CDXUTDialog                 HUD;                  // dialog for standard controls
 CDXUTDialog                 AUI;             // dialog for sample specific controls
 
 // Direct3D 9 resources
-FontPointer     Font =  NULL;
-SpritePointer   Sprite = NULL;
-EffectPointer   Effect = NULL;
+FontPointer     Font =  nullptr;
+SpritePointer   Sprite = nullptr;
+EffectPointer   Effect = nullptr;
 
 Handle WorldProjection;
 Handle World;
@@ -64,7 +64,7 @@ void CALLBACK OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, floa
 void CALLBACK OnD3D9LostDevice(void* pUserContext);
 void CALLBACK OnD3D9DestroyDevice(void* pUserContext);
 
-void InitApp();
+void Initialize();
 void RenderText();
 
 
@@ -95,7 +95,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 	DXUTSetCallbackD3D9DeviceDestroyed(OnD3D9DestroyDevice);
 	DXUTSetCallbackD3D9FrameRender(OnD3D9FrameRender);
 
-	InitApp();
+	Initialize();
 	InitDirectUtility(true, true, NULL); // Parse the command line, show msgboxes on error, no extra command line params
 	SetDirectCursor(true, true);
 	CreateDirectWindow(L"整理过的函数定义");
@@ -109,7 +109,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 //--------------------------------------------------------------------------------------
 // Initialize the app 
 //--------------------------------------------------------------------------------------
-void InitApp()
+void Initialize()
 {
 	settingDialog.Init(&resourceManager);
 	HUD.Init(&resourceManager);
