@@ -50,3 +50,10 @@ typedef ID3DXEffect*  EffectPointer;
 #ifdef __D3DX9SHADER_H__
 typedef D3DXHANDLE    Handle;
 #endif
+/*
+*d3dx9math.h
+*/
+#ifdef __D3DX9MATH_H__
+typedef D3DXVECTOR3 Vector3;
+typedef D3DXCOLOR Color;
+#endif

@@ -132,7 +132,7 @@ void RenderText()
 {
     textHelper->Begin();
     textHelper->SetInsertionPos( 5, 5 );
-    textHelper->SetForegroundColor( D3DXCOLOR( 1.0f, 1.0f, 0.0f, 1.0f ) );
+    textHelper->SetForegroundColor(Color( 1.0f, 1.0f, 0.0f, 1.0f ) );
     textHelper->DrawTextLine( DXUTGetFrameStats( DXUTIsVsyncEnabled() ) );
     textHelper->DrawTextLine( DXUTGetDeviceStats() );
     textHelper->End();
@@ -249,8 +249,8 @@ HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURF
     TimeHandler = Effect->GetParameterByName( NULL, "g_fTime" );
 
     // Setup the camera's view parameters
-    D3DXVECTOR3 vecEye( 0.0f, 0.0f, -5.0f );
-    D3DXVECTOR3 vecAt ( 0.0f, 0.0f, -0.0f );
+	Vector3 vecEye( 0.0f, 0.0f, -5.0f );
+	Vector3 vecAt ( 0.0f, 0.0f, -0.0f );
     Camera.SetViewParams( &vecEye, &vecAt );
 
     return S_OK;
@@ -333,17 +333,17 @@ void CALLBACK OnD3D9FrameRender( IDirect3DDevice9* pd3dDevice, double fTime, flo
         // Update the effect's variables.  Instead of using strings, it would 
         // be more efficient to cache a handle to the parameter by calling 
         // ID3DXEffect::GetParameterByName
-        V( Effect->SetMatrix( WorldProjection, &mWorldViewProjection ) );
-        V( Effect->SetMatrix( World, &mWorld ) );
-        V( Effect->SetFloat( TimeHandler, ( float )fTime ) );
+        Trace( Effect->SetMatrix( WorldProjection, &mWorldViewProjection ) );
+        Trace( Effect->SetMatrix( World, &mWorld ) );
+        Trace( Effect->SetFloat( TimeHandler, ( float )fTime ) );
 
         DXUT_BeginPerfEvent( DXUT_PERFEVENTCOLOR, L"HUD / Stats" ); // These events are to help PIX identify what the code is doing
         RenderText();
-        V( HUD.OnRender( fElapsedTime ) );
-        V( AUI.OnRender( fElapsedTime ) );
+        Trace( HUD.OnRender( fElapsedTime ) );
+        Trace( AUI.OnRender( fElapsedTime ) );
         DXUT_EndPerfEvent();
 
-        V( pd3dDevice->EndScene() );
+		Trace( pd3dDevice->EndScene() );
     }
 }
 
