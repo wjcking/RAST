@@ -25,6 +25,9 @@ typedef CD3DSettingsDlg        SettingsDialog;
 
 #define TraceBack V_RETURN
 #define Trace V
+
+#define	ReleaseObject SAFE_RELEASE
+#define	DeleteObject SAFE_DELETE
 #endif
 
 ////DXUT Optional SDKMISC_H sdkmisc.h
