@@ -305,7 +305,7 @@ void callback OnFrameMove(double fTime, float fElapsedTime, void* pUserContext)
 //--------------------------------------------------------------------------------------
 // Render the scene using the D3D9 device
 //--------------------------------------------------------------------------------------
-void callback OnD3D9FrameRender(IDirect3DDevice9* device, double fTime, float fElapsedTime, void* userContext)
+void callback OnD3D9FrameRender(IDirect3DDevice9* device, double time, float elapsedTime, void* userContext)
 {
 	HRESULT hr;
 	D3DXMATRIXA16 mWorld;
@@ -316,7 +316,7 @@ void callback OnD3D9FrameRender(IDirect3DDevice9* device, double fTime, float fE
 	// If the settings dialog is being shown, then render it instead of rendering the app's scene
 	if (settingDialog.IsActive())
 	{
-		settingDialog.OnRender(fElapsedTime);
+		settingDialog.OnRender(elapsedTime);
 		return;
 	}
 
@@ -338,12 +338,12 @@ void callback OnD3D9FrameRender(IDirect3DDevice9* device, double fTime, float fE
 		// ID3DXEffect::GetParameterByName
 		Trace(Effect->SetMatrix(WorldProjection, &mWorldViewProjection));
 		Trace(Effect->SetMatrix(World, &mWorld));
-		Trace(Effect->SetFloat(TimeHandler, (float)fTime));
+		Trace(Effect->SetFloat(TimeHandler, (float)time));
 
 		DXUT_BeginPerfEvent(DXUT_PERFEVENTCOLOR, L"HUD / Stats"); // These events are to help PIX identify what the code is doing
 		RenderText();
-		Trace(HUD.OnRender(fElapsedTime));
-		Trace(AUI.OnRender(fElapsedTime));
+		Trace(HUD.OnRender(elapsedTime));
+		Trace(AUI.OnRender(elapsedTime));
 		DXUT_EndPerfEvent();
 
 		Trace(device->EndScene());
