@@ -6,7 +6,9 @@
 *minwindef.h
 */
 #ifdef _MINWINDEF_
-//#define CALLBACK CallStandard
+//#ifdef _MAC __stdcall ϵͳСд
+#define  callback CALLBACK
+//#endif
 #endif
 
 /*
@@ -17,6 +19,10 @@
 typedef CModelViewerCamera    ModelViewerCamera;
 typedef CDXUTDialogResourceManager   DialogResourceManager;
 typedef CD3DSettingsDlg        SettingsDialog;
+typedef CDXUTTextHelper*        TextHelper;
+typedef CDXUTDialog DirectUtilityDialog;
+
+
 #define CreateDirectDevice DXUTCreateDevice
 #define InitDirectUtility DXUTInit // Parse the command line, show msgboxes on error, no extra command line params
 #define SetDirectCursor DXUTSetCursorSettings

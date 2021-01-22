@@ -21,11 +21,11 @@
 // Global variables
 //--------------------------------------------------------------------------------------
 ModelViewerCamera          Camera;               // A model viewing camera
-CDXUTDialogResourceManager  resourceManager; // manager for shared resources of dialogs
-CD3DSettingsDlg             settingDialog;          // Device settings dialog
-CDXUTTextHelper*            textHelper = nullptr;
-CDXUTDialog                 HUD;                  // dialog for standard controls
-CDXUTDialog                 AUI;             // dialog for sample specific controls
+DialogResourceManager  resourceManager; // manager for shared resources of dialogs
+SettingsDialog             settingDialog;          // Device settings dialog
+TextHelper            textHelper = nullptr;
+DirectUtilityDialog                 HUD;                  // dialog for standard controls
+DirectUtilityDialog                AUI;             // dialog for sample specific controls
 
 // Direct3D 9 resources
 FontPointer     Font =  nullptr;
@@ -47,22 +47,22 @@ Handle TimeHandler;
 //--------------------------------------------------------------------------------------
 // Forward declarations 
 //--------------------------------------------------------------------------------------
-LRESULT CALLBACK MsgProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bool* pbNoFurtherProcessing,
+LRESULT callback MsgProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bool* pbNoFurtherProcessing,
 	void* pUserContext);
-void CALLBACK OnKeyboard(UINT nChar, bool bKeyDown, bool bAltDown, void* pUserContext);
-void CALLBACK OnGUIEvent(UINT nEvent, int nControlID, CDXUTControl* pControl, void* pUserContext);
-void CALLBACK OnFrameMove(double fTime, float fElapsedTime, void* pUserContext);
-bool CALLBACK ModifyDeviceSettings(DXUTDeviceSettings* pDeviceSettings, void* pUserContext);
+void callback OnKeyboard(UINT nChar, bool bKeyDown, bool bAltDown, void* pUserContext);
+void callback OnGUIEvent(UINT nEvent, int nControlID, CDXUTControl* pControl, void* pUserContext);
+void callback OnFrameMove(double fTime, float fElapsedTime, void* pUserContext);
+bool callback ModifyDeviceSettings(DXUTDeviceSettings* pDeviceSettings, void* pUserContext);
 
-bool CALLBACK IsD3D9DeviceAcceptable(D3DCAPS9* pCaps, D3DFORMAT AdapterFormat, D3DFORMAT BackBufferFormat,
+bool callback IsD3D9DeviceAcceptable(D3DCAPS9* pCaps, D3DFORMAT AdapterFormat, D3DFORMAT BackBufferFormat,
 	bool bWindowed, void* pUserContext);
-HRESULT CALLBACK OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
+HRESULT callback OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
 	void* pUserContext);
-HRESULT CALLBACK OnD3D9ResetDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
+HRESULT callback OnD3D9ResetDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
 	void* pUserContext);
-void CALLBACK OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, float fElapsedTime, void* pUserContext);
-void CALLBACK OnD3D9LostDevice(void* pUserContext);
-void CALLBACK OnD3D9DestroyDevice(void* pUserContext);
+void callback OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, float fElapsedTime, void* pUserContext);
+void callback OnD3D9LostDevice(void* pUserContext);
+void callback OnD3D9DestroyDevice(void* pUserContext);
 
 void Initialize();
 void RenderText();
@@ -99,7 +99,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 	InitDirectUtility(true, true, NULL); // Parse the command line, show msgboxes on error, no extra command line params
 	SetDirectCursor(true, true);
 	CreateDirectWindow(L"整理过的函数定义");
-	CreateDirectDevice(true, 640, 480);
+	CreateDirectDevice(true, 1280, 780);
 	RenderLoopMain(); // Enter into the DXUT render loop	//	DXUTMainLoop();  
 
 	return DXUTGetExitCode();
@@ -142,7 +142,7 @@ void RenderText()
 //--------------------------------------------------------------------------------------
 // Rejects any D3D9 devices that aren't acceptable to the app by returning false
 //--------------------------------------------------------------------------------------
-bool CALLBACK IsD3D9DeviceAcceptable(D3DCAPS9* pCaps, D3DFORMAT AdapterFormat,
+bool callback IsD3D9DeviceAcceptable(D3DCAPS9* pCaps, D3DFORMAT AdapterFormat,
 	D3DFORMAT BackBufferFormat, bool bWindowed, void* pUserContext)
 {
 	// Skip backbuffer formats that don't support alpha blending
@@ -164,7 +164,7 @@ bool CALLBACK IsD3D9DeviceAcceptable(D3DCAPS9* pCaps, D3DFORMAT AdapterFormat,
 //--------------------------------------------------------------------------------------
 // Called right before creating a D3D9 or D3D10 device, allowing the app to modify the device settings as needed
 //--------------------------------------------------------------------------------------
-bool CALLBACK ModifyDeviceSettings(DXUTDeviceSettings* pDeviceSettings, void* pUserContext)
+bool callback ModifyDeviceSettings(DXUTDeviceSettings* pDeviceSettings, void* pUserContext)
 {
 	if (pDeviceSettings->ver == DXUT_D3D9_DEVICE)
 	{
@@ -214,7 +214,7 @@ bool CALLBACK ModifyDeviceSettings(DXUTDeviceSettings* pDeviceSettings, void* pU
 // Create any D3D9 resources that will live through a device reset (D3DPOOL_MANAGED)
 // and aren't tied to the back buffer size
 //--------------------------------------------------------------------------------------
-HRESULT CALLBACK OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
+HRESULT callback OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
 	void* pUserContext)
 {
 	HRESULT hr;
@@ -261,7 +261,7 @@ HRESULT CALLBACK OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFA
 // Create any D3D9 resources that won't live through a device reset (D3DPOOL_DEFAULT) 
 // or that are tied to the back buffer size 
 //--------------------------------------------------------------------------------------
-HRESULT CALLBACK OnD3D9ResetDevice(IDirect3DDevice9* pd3dDevice,
+HRESULT callback OnD3D9ResetDevice(IDirect3DDevice9* pd3dDevice,
 	const D3DSURFACE_DESC* pBackBufferSurfaceDesc, void* pUserContext)
 {
 	HRESULT hr;
@@ -295,7 +295,7 @@ HRESULT CALLBACK OnD3D9ResetDevice(IDirect3DDevice9* pd3dDevice,
 //--------------------------------------------------------------------------------------
 // Handle updates to the scene.  This is called regardless of which D3D API is used
 //--------------------------------------------------------------------------------------
-void CALLBACK OnFrameMove(double fTime, float fElapsedTime, void* pUserContext)
+void callback OnFrameMove(double fTime, float fElapsedTime, void* pUserContext)
 {
 	// Update the camera's position based on user input 
 	Camera.FrameMove(fElapsedTime);
@@ -305,7 +305,7 @@ void CALLBACK OnFrameMove(double fTime, float fElapsedTime, void* pUserContext)
 //--------------------------------------------------------------------------------------
 // Render the scene using the D3D9 device
 //--------------------------------------------------------------------------------------
-void CALLBACK OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, float fElapsedTime, void* pUserContext)
+void callback OnD3D9FrameRender(IDirect3DDevice9* device, double fTime, float fElapsedTime, void* userContext)
 {
 	HRESULT hr;
 	D3DXMATRIXA16 mWorld;
@@ -321,10 +321,10 @@ void CALLBACK OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, floa
 	}
 
 	// Clear the render target and the zbuffer 
-	V(pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_ARGB(0, 45, 50, 170), 1.0f, 0));
+	Trace(device->Clear(0, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_ARGB(0, 145, 210, 120), 1.0f, 0));
 
 	// Render the scene
-	if (SUCCEEDED(pd3dDevice->BeginScene()))
+	if (SUCCEEDED(device->BeginScene()))
 	{
 		// Get the projection & view matrix from the camera class
 		mWorld = *Camera.GetWorldMatrix();
@@ -346,7 +346,7 @@ void CALLBACK OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, floa
 		Trace(AUI.OnRender(fElapsedTime));
 		DXUT_EndPerfEvent();
 
-		Trace(pd3dDevice->EndScene());
+		Trace(device->EndScene());
 	}
 }
 
@@ -354,7 +354,7 @@ void CALLBACK OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, floa
 //--------------------------------------------------------------------------------------
 // Handle messages to the application
 //--------------------------------------------------------------------------------------
-LRESULT CALLBACK MsgProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bool* noFurtherProcessing,
+LRESULT callback MsgProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bool* noFurtherProcessing,
 	void* pUserContext)
 {
 	// Pass messages to dialog resource manager calls so GUI state is updated correctly
@@ -387,7 +387,7 @@ LRESULT CALLBACK MsgProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, boo
 //--------------------------------------------------------------------------------------
 // Handle key presses
 //--------------------------------------------------------------------------------------
-void CALLBACK OnKeyboard(UINT nChar, bool bKeyDown, bool bAltDown, void* pUserContext)
+void callback OnKeyboard(UINT nChar, bool bKeyDown, bool bAltDown, void* pUserContext)
 {
 }
 
@@ -395,7 +395,7 @@ void CALLBACK OnKeyboard(UINT nChar, bool bKeyDown, bool bAltDown, void* pUserCo
 //--------------------------------------------------------------------------------------
 // Handles the GUI events
 //--------------------------------------------------------------------------------------
-void CALLBACK OnGUIEvent(UINT nEvent, int nControlID, CDXUTControl* pControl, void* pUserContext)
+void callback OnGUIEvent(UINT nEvent, int nControlID, CDXUTControl* pControl, void* pUserContext)
 {
 	switch (nControlID)
 	{
@@ -412,7 +412,7 @@ void CALLBACK OnGUIEvent(UINT nEvent, int nControlID, CDXUTControl* pControl, vo
 //--------------------------------------------------------------------------------------
 // Release D3D9 resources created in the OnD3D9ResetDevice callback 
 //--------------------------------------------------------------------------------------
-void CALLBACK OnD3D9LostDevice(void* pUserContext)
+void callback OnD3D9LostDevice(void* pUserContext)
 {
 	resourceManager.OnD3D9LostDevice();
 	settingDialog.OnD3D9LostDevice();
@@ -428,7 +428,7 @@ void CALLBACK OnD3D9LostDevice(void* pUserContext)
 //--------------------------------------------------------------------------------------
 // Release D3D9 resources created in the OnD3D9CreateDevice callback 
 //--------------------------------------------------------------------------------------
-void CALLBACK OnD3D9DestroyDevice(void* pUserContext)
+void callback OnD3D9DestroyDevice(void* pUserContext)
 {
 	resourceManager.OnD3D9DestroyDevice();
 	settingDialog.OnD3D9DestroyDevice();
