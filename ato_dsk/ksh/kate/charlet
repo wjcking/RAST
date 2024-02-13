@@ -1,0 +1,41 @@
+﻿
+//数字
+one = '1', two = '2', thr = '3',  fou = '4', fiv = '5', 
+six = '6',sev = '7', eht = '8', nin = '9',zeo = '0',
+//小写字母
+csa = 'a', csb = 'b', csc = 'c', csd = 'd',
+cse = 'e', csf = 'f', csg = 'g', csh = 'h',
+csi = 'i', csj = 'j', csk = 'k', csl = 'l',
+csm = 'm', csn = 'n', cso = 'o', csp = 'p',
+csq = 'q', csr = 'r', css = 's', cst = 't',
+csu = 'u', csv = 'v', csw = 'w', csx = 'x',
+csy = 'y', csz = 'z',
+//大写字母
+cba = 'A', cbb = 'B', cbc = 'C', cbd = 'D',
+cbe = 'E', cbf = 'F', cbg = 'G', cbh = 'H',
+cbi = 'I', cbj = 'J', cbk = 'K', cbl = 'L',
+cbm = 'M', cbn = 'N', cbo = 'O', cbp = 'P',
+cbq = 'Q', cbr = 'R', cbs = 'S', cbt = 'T',
+cbu = 'U', cbv = 'V', cbw = 'W', cbx = 'X',
+cby = 'Y', cbz = 'Z',
+//赛博特.
+cnt = '-',
+cnr = '~',
+ace = ' ', con = ':',
+cma = ',', com = ',',
+duo = '.', dsh = '/',
+spt = '|',
+//赛博特.布兰特
+lsb = '(', lmb = '[', lbb = '{', lkt = '<', qos = '\'',
+rsb = ')', rmb = ']', rbb = '}', rkt = '>', qod = '\"',
+//计算机运算符号和现实纸张相符的只有+
+cpp = '+',
+
+alm = '!', per = '%',
+csp = '#', and = '&',
+dor = '$',
+sqt = '\\',
+
+sdr = '*', eqt = '=', qst = '?', atr = '@',dsa = '\\',
+art = '^', udr = '_';
+    

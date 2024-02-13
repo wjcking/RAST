@@ -1,0 +1,123 @@
+
+void test1()
+{
+	const long long SIZE = 5000;
+	const string text = "ABC/DEF/GHI/JKL/MNO/PQR/STU/<-/VWX/YZABC/DEF/GHI/JKL/MNO/PQR/STU->VWX/YZ/";
+	int a, b;
+	vector<string> separator;
+	separator.push_back("<-");
+	separator.push_back("->");
+	a = clock();
+	{
+		for (int i = 0; i < SIZE; ++i) {
+
+			StringTokenizer2 tokenizer2(text, separator);
+
+			while (tokenizer2.hasMoreTokens()) {
+			cout << tokenizer2.nextToken() << " ";
+			}
+			cout << endl;
+		}
+	}
+	b = clock();
+	std::cout << b - a << "ms" << endl;
+
+	a = clock(); 
+		StringBuilder builder(102400);
+		for (int i = 0; i < SIZE; ++i) {
+			StringTokenizer tokenizer1(text, "/", builder);
+
+			//while (tokenizer1.hasMoreTokens()) {
+			//	cout << tokenizer1.nextToken() << " ";
+			//}
+			//cout << endl;
+		} 
+	b = clock();
+	std::cout << b - a << "ms" << endl;
+}
+void test2()
+{
+	const int SIZE = 1000000;
+	{
+		//WizStrBuilder builder;
+		StringBuilder builder(102400, "");
+		string _A = "wow                         ";
+		string _B = " Hello                      ";
+
+		int a, b;
+		string C;
+		a = clock();
+		for (int t = 0; t < SIZE; ++t) {
+			builder.Clear();
+			builder.Append(_A.c_str(), _A.size());
+			builder.Append(_B.c_str(), _B.size());
+			builder.Append(_A.c_str(), _A.size());
+			builder.Append(_B.c_str(), _B.size());
+
+			C = builder.Str(); //Divide(3);
+		}
+		b = clock();
+
+		cout << b - a << "ms" << endl;
+
+		cout << C << endl;
+	}
+
+	{
+		int a, b;
+		string C;
+
+		a = clock();
+		for (int t = 0; t < SIZE; ++t) {
+			string A = "wow                         ";
+			string B = " Hello                      ";
+
+			C = A + B + A + B;
+			cout << C;
+		}
+		b = clock();
+
+		cout << b - a << "ms" << endl;
+		cout << C << endl;
+	}
+}
+
+#pragma comment(lib,"lib/Everything32.lib")
+
+#pragma comment(lib,"lib/Everything64.lib")
+
+int main(int argc, char **argv)
+{
+//	test2();
+//	DWORD i;
+//
+//	// Set the search string to abc
+////	Everything_SetSearchW("");
+//
+//	// Execute the query.
+//	Everything_Query(TRUE);
+//	auto n = Everything_GetNumResults();
+//	// Display results.
+//	for (i = 0; i < Everything_GetNumResults(); i++)
+//	{
+//		auto s1 = Everything_GetResultFileName(i);
+//		auto s2 = Everything_GetResultPath(i);
+//		//printf("%s [%s]\n", Everything_GetResultFileName(i), Everything_GetResultPath(i));
+//		cout << "%s [%s]\n" << s1 << s2 << endl;
+//	}
+//
+//	return 0;
+}
+//
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetSearchW(LPCWSTR lpString);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetSearchA(LPCSTR lpString);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetMatchPath(BOOL bEnable);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetMatchCase(BOOL bEnable);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetMatchWholeWord(BOOL bEnable);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetRegex(BOOL bEnable);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetMax(DWORD dwMax);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetOffset(DWORD dwOffset);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetReplyWindow(HWND hWnd);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetReplyID(DWORD dwId);
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetSort(DWORD dwSort); // Everything 1.4.1
+//EVERYTHINGUSERAPI void EVERYTHINGAPI Everything_SetRequestFlags(DWORD dwRequestFlags); // Every

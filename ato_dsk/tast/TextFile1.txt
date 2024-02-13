@@ -1,0 +1,64 @@
+
+
+The following is a subset of characters:
+comHelper where T : class, new()
+    //{
+    //    List<T> GetList<TParams>(TParams info);
+    //    List<T> GetList();
+    //    T GetInfo<TParams>(TParams info);
+    //    List<T> GetInfo();
+    //    int AddInfo(T info);
+
+    //}
+    //public class ISource<T> //: SixcomHelper where T : class, new()
+    //{
+    //    public List<T> GetList<TParams>(TParams info)
+    //    {
+    //        return new List<T>();
+    //    }
+
+    //    public List<T> GetList()
+    //    {
+    //        return new List<T>();
+    //    }
+    //    public T GetInfo<TParams>(TParams info)
+    //    {
+    //        return default(T);
+    //    }
+    //    public List<T> GetInfo()
+    //    {
+    //        return default(List<T>);
+    //    }
+
+    //}
+
+    /*array index matric artfod erick archtecture
+      1 dynamical prefix suffix 
+         type fonk kind rank indexet
+      2 orginal structed 
+    3 build each or combine above
+      1 Struct Packed erick_eydix[]
+    */
+    struct karact_eydix_struct
+    {
+        short
+               preditor_width,            // preditor_width , = Byte.MaxValue,
+               preditor_height;            // preditor_width , = Byte.MaxValue,
+        short[,]
+            eydix_screen1,
+            eydix_screen2,
+            eydix_screen3,
+            eydix_screen4;
+    }
+    /*
+     * 1   dynamical 32727 255 switch each.screen sheet
+     */
+    struct karact_eydix_dynamic
+    {
+        short[,]
+         eydix_screen1;
+        // eydix_screen2.....NX, 
+    }
+
+    struct karyect1863 { short index; int kaoyet; short kaler; int evaluate; long stock; long universal; long statistic;}
+    struct karyect1864 { short index; int kaoyet; short kaler; int evaluate; long stock; long universal; long statistic;}

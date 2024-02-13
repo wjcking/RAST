@@ -1,0 +1,47 @@
+﻿            //dataGridView1.DataSource = this.dataGridView1;
+            //tableLayoutPanel1.dou
+            //var symbolics = new Symbolics();
+            //symbolics.MdiParent = this;
+            //symbolics.Show();
+
+            //var main = new AsnicForm();
+            //main.MdiParent = this;//子窗体的父窗体是当前窗体
+            //main.WindowState = FormWindowState.Maximized;//子窗体
+            //main.Show();  
+
+
+            //    label2.BringToFront();
+            //      Application.AddMessageFilter(this);
+          
+            //       var resources = new System.ComponentModel.ComponentResourceManager(this.GetType());
+            //       resources.ApplyResources(this, "$this");
+            //        Loading(this, resources);
+
+           // var g = Handles.Get();
+            //MessageBox.Show(g);
+           // var g = Handles.Get();
+
+		           //angelView.Navigate(@"https://baike.baidu.com/item/Python/407313?fr=aladdin");
+               angelView.Navigate(@"F:\VSProjects\AngelWolf\Rastera\asnic\rastera\ketself.html");
+        //     [ DllImport("User32.dll", CharSet = CharSet.Auto)]
+        //     public static extern int ReleaseDC(IntPtr hWnd, IntPtr hDC);
+
+        //     [DllImport("User32.dll")]
+        //     private static extern IntPtr GetWindowDC(IntPtr hWnd);
+
+        //     protected override void WndProc(ref Message m)
+        //     {
+        //         base.WndProc(ref m);
+        //         const int WM_NCPAINT = 0x85;
+        ////      if (m.Msg == WM_NCPAINT)
+        //     //    {
+        //             IntPtr hdc = GetWindowDC(m.HWnd);
+        //             if ((int)hdc != 0)
+        //             {
+        //                 Graphics g = Graphics.FromHdc(hdc);
+        //                 g.FillRectangle(Brushes.Green, new Rectangle(0, 0, 4800, 23));
+        //                 g.Flush();
+        //                 ReleaseDC(m.HWnd, hdc);
+        //             }
+        //    //     }
+        //     }
