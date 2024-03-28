@@ -1,0 +1,1113 @@
+//法律纠纷 分类
+口头协议
+  劳动纠纷  
+    婚姻家庭 旅游纠纷  
+    遗产继承 抵押担保 
+  人身损害
+  
+  //交通事故 医疗纠纷
+  //拆迁安置 工伤赔偿 农村承包 债务追讨   邮政储蓄
+  //保险理赔 消费权益新闻侵权
+合同纠纷
+
+Lisoke:Flat //solic.html FlatFirst.Analysis.Provef:Solid-Vesaid  Solayke 
+  Fank
+  Tak:Tayke
+  //Lysek:Selayke
+    
+    Caret:Karet //Flat Diamond Shape
+Solaik
+
+Lisode:Masait//A D
+   Fand   //EidentFrant  Franket  Front Radical Fonc~Square 正方形Rectan  Rectan
+   Tyde:Tayde:Tricycle:Tycle:Triangle //Tryarc  Tryant
+   //Lesade:Selayde
+    AyeFand
+    Carde:Karde
+  Seleis:Leis //Line
+
+
+Delaweik.Comsek.Bertlick
+
+Summary.Persection:Dcbt:Advent&Anyuser
+    Inner
+        Software.Hardware.Drive
+    Outter 
+        Software.Keyboard.Type
+        Software.Mouse.Click:left,middle,right
+        Hardware.Camera.Software
+    Interface.Inner-O-Outter
+        Software.Hardware.Plug.Count
+
+Dcibt:Andyuser:Dcayebt
+  Keywordiz:Renames,Substance,Influence
+  Delaware^Pragma 
+    Hardware.Biane:Redefined:Delaware
+    Software:Pragma 
+  Hard^Soft~Tender
+   Human.Knowndas.Software
+   Human.Skin.Meyson.Attach:Softly
+  Developer.Delaware.Related:
+    Computers
+    Electronicals
+    Automaticals
+  Developer.Pragma
+  Developer.Hard
+  
+  User.Hard.Haibt
+  User.Hard.Career
+  User.Time.Guest.Soft 
+
+*Atmost(EyeVision&Hand)  Analytical.DataCollect
+    Depends on which one is piroity to think about
+        user.dct.device.celly..inf.usb-type-c 
+        dct.dev.outter.hard.scn.lcd
+
+    dct.dev.outter.hard.scn.crt
+    dct.dev.outter.hard.mbd.bios
+    dct.dev.inner.hard.mbd.inf.pci
+    dct.dev.outter.hard.mbd.inf.usb
+
+    dct.dev.hand.mos.soft.drive
+    dct.user.hand.mos.soft.pointer(moving,click)
+    Utility.Renliy.Caerer 
+        Business,Industry Automation
+
+
+
+
+Attribute
+Dcibt.Hardware.EletricalOnly
+  Mainboard
+  Memory
+  Hardisk
+  Screen.Colorfully
+  Cpu:Operate
+    SearchMost
+  Others
+    Recircle(Retrive:Return)
+Comsek.Delaware.Entrike //Analytical\absock-cybert\entrike.html
+
+Dcayebt.Enegy
+  Electrionic
+  FusialRadical.FusionDirecto
+  FusionAyeonical
+Erick //ayrilia.html erick.html
+
+Ayebert.Basement
+Hardwere:Computer(Ele)
+  Screen.Aerofusal.Ionical
+    Interface.Prioit.UnityOne
+  Bertlick:Dcibt.Adversially
+    HardFirst.?Transplant.Ayerilically.Intellyis.Inkelick
+      Wesyke:Wsyreck.Karelot
+    HeadSenseless.BodyOrganess
+    Paskeful.Comfort.Prioit&Meget.Minsike
+      Entertain
+      Creativity-Kelaine.Kelaon.Lusika.Dykelon
+Delaware:Comsek(Ele,Fur)
+  MainSteal.SolarFirst.Ayerilik.Sunlask
+    CenteralAnyother.Partically
+    Konnect.KatineSaerofull
+  Funges.Solidisk.FirstTest
+  Monika.Ionick
+  Bertlick.Intellyis.Inkelick.Addlays.Sylesus
+    
+Dayer^CiscoSike(Fac)
+  Ayebert.Leonic
+Dayke.Daysen
+
+
+//fond-tyber.html
+
+Sequalet.Kount
+  Enuix.Ayend.Funckint:Kount2
+    Unicon.Human
+      Tryarc 
+      Tyc Tyker  
+    Isoc.Renliy
+  Solid^AyonLet:Fondkand.Within.Circles:Kount4 
+Mobilize.Animate(Sticka
+  Stick Kolor Stack Stable//Fix 
+FondWrappered
+  SideAttach:
+  AngleStick
+  AngleDetach:Anglar
+Distance:TryicAngle-YeinSide
+Distance:TryicAxiz-FondAxis
+
+
+
+HTMLTextAreaElement.prototype.caret = function (start, end) {
+    switch (arguments.length) {
+        case 0:
+            return this.selectionStart;
+        case 1:
+            this.selectionStart = start;
+            this.selectionEnd = start;
+            focus();
+            return;
+        case 2:
+            this.selectionStart = start;
+            this.selectionEnd = end;
+            focus();
+            return;
+    }
+};
+HTMLTextAreaElement.prototype.careted = function () {
+    return selectionStart == selectionEnd;    //if the textarea has selection then return true
+};
+//HTMLTextAreaElement.prototype.kared = function () { //return the selection text
+//    return this.value.substring(this.selectionStart, this.selectionEnd);
+//};
+
+var textarea = document.getElementsByTagName("textarea")[0];
+
+textarea.onkeydown = function (event) {
+    //support tab on textarea
+    //tab was pressed;
+    if (event.keyCode == 9) {
+        var careted = textarea.caret() + estab.length;
+        var front = textarea.value.substring(0, textarea.caret());
+        var end = textarea.value.substring(textarea.caret(), textarea.value.length);
+        textarea.value = front + estab + end;
+        textarea.caret(careted);
+        /*tab key will blur this textarea*/
+        return false;
+    }
+
+};
+
+textarea.onkeyup = function (event) {
+    if (event.keyCode == 13) {
+        //        var cursorPos = textarea.caret;
+        //  var curentLine = textarea.value.substr(0, textarea.caret()).split(esrnt).pop();
+    
+        //   var indent = curentLine.match(/^\s*/)[0];
+        //        //    curentLine = curentLine + tabSpace; 
+        //        var value = textarea.value;
+        //        var textBefore = value.substring(cursorPos);
+        //        var textAfter = value.substring(cursorPos, value.length);
+
+        //    //    value = textBefore + indent + textAfter;
+        //        console.log("textBefore:"+textBefore);
+        //        console.log("textAfter:" + textAfter); 
+        //     console.log("indent:" + indent)
+    }
+};
+------------------------------------------------
+HTMLTextAreaElement.prototype.getCaretPosition = function () {
+    //return the caret position of the textarea
+    return this.selectionStart;
+};
+HTMLTextAreaElement.prototype.setCaretPosition = function (position) { //change the caret position of the textarea
+    this.selectionStart = position;
+    this.selectionEnd = position;
+    this.focus();
+};
+HTMLTextAreaElement.prototype.hasSelection = function () {
+    //if the textarea has selection then return true
+    if (this.selectionStart == this.selectionEnd) {
+        return false;
+    } else {
+        return true;
+    }
+};
+//HTMLTextAreaElement.prototype.getSelectedText = function () { //return the selection text
+//    return this.value.substring(this.selectionStart, this.selectionEnd);
+//};
+HTMLTextAreaElement.prototype.setSelection = function (start, end) { //change the selection area of the textarea
+    this.selectionStart = start;
+    this.selectionEnd = end;
+    this.focus();
+};
+var textarea = document.getElementsByTagName("textarea")[0];
+textarea.onkeydown = function (event) {
+    var tabSpace = "  ";
+    //support tab on textarea
+    if (event.keyCode == 9) { //tab was pressed
+        var newCaretPosition;
+        newCaretPosition = textarea.getCaretPosition() + tabSpace.length;
+        textarea.value = textarea.value.substring(0, textarea.getCaretPosition()) + tabSpace + textarea.value.substring(textarea.getCaretPosition(), textarea.value.length);
+        textarea.setCaretPosition(newCaretPosition);
+        //tab key will blur this textarea
+        return false;
+    }
+    if (event.keyCode == 13) {
+        var cursorPos = textarea.selectionStart;
+        var curentLine = textarea.value.substr(0, this.selectionStart).split("\n").pop();
+        var indent = curentLine.match(/^\s*/)[0];
+        //    curentLine = curentLine + tabSpace; 
+        var value = textarea.value;
+        var textBefore = value.substring(0, cursorPos);
+        var textAfter = value.substring(cursorPos, value.length);
+
+      this.value = textBefore + indent + textAfter;
+        //       // textarea.setCaretPosition(value.length);
+      console.log(textBefore);
+        //      //   return false;
+        //        // event.preventDefault();
+        //          textarea.setCaretPosition( indent.length + 1); // +1 is for the \n
+    }
+    //     if (event.keyCode == 8) { //backspace
+    //         if (textarea.value.substring(textarea.getCaretPosition() - 4, textarea.getCaretPosition()) == tabSpace) { //it's a tab space
+    //             var newCaretPosition;
+    //             newCaretPosition = textarea.getCaretPosition() - 3;
+    //             textarea.value = textarea.value.substring(0, textarea.getCaretPosition() - 3) + textarea.value.substring(textarea.getCaretPosition(), textarea.value.length);
+    //             textarea.setCaretPosition(newCaretPosition);
+    //         }
+    //     }
+    //     if (event.keyCode == 37) { //left arrow
+    //         var newCaretPosition;
+    //         if (textarea.value.substring(textarea.getCaretPosition() - 4, textarea.getCaretPosition()) == tabSpace) { //it's a tab space
+    //             newCaretPosition = textarea.getCaretPosition() - 3;
+    //             textarea.setCaretPosition(newCaretPosition);
+    //         }
+    //     }
+    //     if (event.keyCode == 39) { //right arrow
+    //         var newCaretPosition;
+    //         if (textarea.value.substring(textarea.getCaretPosition() + 4, textarea.getCaretPosition()) == tabSpace) { //it's a tab space
+    //             newCaretPosition = textarea.getCaretPosition() + 3;
+    //             textarea.setCaretPosition(newCaretPosition);
+    //         }
+    //     } 
+}
+Your identification has been saved in /home/wjcking/.ssh/id_rsa
+Your public key has been saved in /home/wjcking/.ssh/id_rsa.pub
+
+SHA256:RLfxlmSQ2CV51btZe00wojVo044ZykDZZoEHoG7feqQ wjcking@hotmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|    .oo=o+=B+... |
+|   .  +.*.OB*.o .|
+|  .    *.o.X+o o.|
+| .     .o +..  .o|
+|  o     S      .*|
+| . . ..        +o|
+|    .o.         .|
+|    E..          |
+|    ..           |
++----[SHA256]-----+
+﻿ 
+    Advent:Andev.Easy.Develop.ArchitectInformation.Collect
+        Cxp/Jav
+        Layer:Isoc Isoxk
+        Merge:Isometric
+    Anyuser:Aniuser.VisionControl.Feeling
+        Dix Gdi Svg Cvs 
+        MultipleVisionDisplayResearch
+        Business.FormKontrol
+        *Turkangle //1O1ONE 
+    关键.消损型.点球-骨-此欧式.渴了喝let Cryteck = {
+    /*
+     *[yingG!=^/\]可丁可卯每一个   sok
+     * isAdverse = Direct.Left|Direct.Right
+     */
+    kaiter: function (value, step) {
+
+        Typelect.assert(value);
+
+        step = Typelect.default(step, 1);
+        isAdverse = Typelect.default(isAdverse, false);
+
+        for (var i = 0; i < value.length; i += step)
+    }
+}
+*******************new kind in JavaScript*************************
+Sabora = [
+    ['Separator'],
+    ['Link'],
+    ['Bracket'],
+    ['Link', 'Separator'],
+    ['Separator', 'Bracket'],
+    ['Bracket', 'Separator'],
+    ['Link', 'Bracket'],
+    ['Bracket', 'Link'],
+    ['Separator', 'Link', 'Bracket'],
+    ['Separator', 'Bracket', 'Link'],
+    ['Link', 'Separator', 'Bracket'],
+    ['Link', 'Bracket', 'Separator'],
+    ['Bracket', 'Separator', 'Link'],
+    ['Bracket', 'Link', 'Separator']
+]
+
+*******************new kind in JavaScript*************************
+var extent = function (params) {
+            'use strict';
+
+            if (null != params)
+                document.write("new:" + params);
+
+            function _showName(name) {
+                document.writeln(name);
+            }
+
+            function mine(para) {
+                document.writeln(para);
+            }
+
+            return {
+                mine: mine,
+                ketlina: "public properties",
+
+                //showName(name) { //IE NOT 练习私有方法
+                //    _showName(name);
+                //}
+            }
+        }
+
+        //var e = new extacted("hereby that is jaoasdf");
+        //e.mine("mine");
+        //e.showName("show" + e.ketlina);
+
+******************************************************ketstruct************************************
+Language = [
+    'english chinese trans-turk'
+]
+// 'letter word sentence',
+// 'single double triple',
+Asniks = [
+    'stick stack stabled colored',
+    'nouns pronouns adjectives numerals verb adverbs articles prepositions conjunctions interjections auxiliary',
+]
+Identities = [
+    'id index name desc content text',
+]
+Klass = [
+    'is ',
+    'rint rant rank ranic rink',
+    'kint kinc kant knic kind',
+    'classify category type',
+    'singeline, functional'
+]
+Marks = [
+    'html css',
+    'div span p',
+    'font style'
+]
+Programs = [
+    'js java cpp',
+    'import export using include',
+    'namespace package union struct friend class interface function',
+    'private protected interneal public virtual abstract base super extend implements override overload implicit explicit',
+    'inline static new extern const readonly operator delete void self this return',
+    'template default mutable volatile',
+    'auto var let char wchar_t int short float bool boolean double long unsigned enum object params ',
+    'sbyte byte ushort uint ulong decimal null false true ',
+    'out ref event delegate lock synchronized thread',
+    'if else break switch case goto yield',
+    'for foreach do while continue',
+    'try catch throw finally',
+    'typedef typeid nameof typename sizeof',
+    'get set value attribute',
+    'instanceof equals' 
+]
+Funkes = [
+    'split slice indexOf lastIndexOf  fromCharCode replace charAt toUpperCase toLowerCase concat length',
+    'disrepeat sum firstUpper',
+]
+
+
+//const
+//    Kits = [
+//        [' ,|，',//存在全角
+//            ['()[]{}',
+//                ['+-*/%',
+//                    ['.?~=$!'
+//                    ]
+******************************************************ketstruct************************************
+tring.prototype.leonic = function () {
+         // var str="选购AppleCare+,延保2dfffdsfsdffsd3232332423432年";
+        //var engCount=0;
+        //var numCount=0;
+        //var chsCount=0;
+        //var other=0;
+        //document.write(str+"<br/><br/><br/>");
+        //for(var i=0; i<str.length; i++){
+        //        document.write(str[i]+",")
+        //    var num=str.charCodeAt(i);   //转unicode码比较
+        //    if(num>=19968&&num<=40869){  //汉字
+        //        chsCount++;
+        //    }else if((num>=65&&num<=90)||(num>=97&&num<=122)){//字母
+        //        engCount++;
+        //    }else if(num>=48&&num<=57){  //数字
+        //        numCount++;
+        //    } else {
+        //        other++;   //其他字符
+        //    }
+        //}
+        //document.write("<br/>");
+        //document.write("<br/>");
+        //document.write("<br/>");
+        //document.write("汉字："+chsCount+"<br/>");
+        //document.write("数字："+numCount+"<br/>");
+        //document.write("英文字母"+engCount+"<br/>");
+        //document.write("其他字符："+other+"<br/>");
+        //document.write(str.length)
+        //var s = ketstring("this is a string autotest for pingdang");
+        //var s = "prototype string";
+        //document.write(s.upperFirst());
+        //document.write(s.toUpperCase());
+        //var s1 = "{0}prototype string <br/>";
+        //document.write(s1.repeat(3));
+        //document.write(s1.replaceAll("o", "-asdf-"));
+        //  document.write(s1.format("FFF"));
+*************************************************************each ***************************************
+<!--     //Tri
+        //Unicode.Language
+        //Transform.Solid.Kolor Random.ExtremEylex.Earthly^Rotate 
+        //Axis Odimentional think Directive.Left?.Matrix?.Right 转置
+        //IsOverride.Leonic
+        //Easy.JsonDev.ChangeDirective(Default=Direction.Left|Direction.Right)
+        //  bool:true, true:bool
+        //  Pi:3.14,3.14:PI
+        //Stringly^Converderation ketstart.word.letter(IncludeSBL) Glanced.Without \r   \n 
+        //  "bool", "不是 好锂"
+        //bool:"true",Number:"3.334"
+        //Unique.Combine 
+        //  "truebool" "num3.14" AsciiLetter:"603424 3.14" NeedConnector
+        let Leonic = {
+            //不能再用等于号放花括号类型first:={ what: “'yourname'},
+            //predicate: function (predicate) {
+            //    document.write(this.string);
+            //},
+            array: [1, 2, 3, 'd'],
+            string: "value2",
+            stringEach: 'a b c d',
+            boolean: true,
+            number: 98746123,
+            func1: [function () {
+                document.write("f5");
+            }, function () { },
+            ],
+            Funcks: [
+                ["l124-l80P0-END", "l124-l80:P0-END", "l124-l80:P0-END"],
+                ["l124-l80P0-END", "l124-l80:P0-END", "l124-l80:P0-END"],
+                ["l124-l80P0-END", "l124-l80:P3-END", "l124-l80:P0-END"],
+                ["l124-l80P0-END", "l124-l80:P0-END", "l124-l80:P0-END"],
+                ["l124-l80P0-END", "l124-l80:P0-END", "l124-l80:P0-END"],
+                ["l124-l80P0-END", "l124-l80:P0-END", "l124-l80:P0-END"],
+            ],
+            //RectanetX Metric^k^X RectangeIndex
+            //Subindex
+            'Func-1-Index:Ketstart:?Each&Space&': function () {
+                return
+                [
+                    'a b c d',
+                    'a b c d',
+                    'a b c d',
+                    ['asdf asdf  sad fa'],
+                    ['asasdf sad f'],
+                    ['asdf asdf asdf sad ffdas'],
+
+                    ["first", "sec", "thrd"],
+                    ["first", "sec", "thrd"],
+                    ["first", "sec", "thrd"],
+                ];
+                //line: 4
+                //pine:5
+                substyle:
+                [
+                    's-ed-len,abbr3-4?.5'
+                ]
+            },
+            Instance: function () {
+
+            }
+        }-->
+*************************************************************each ***************************************
+//    if (undefined == s)
+//        return;
+    
+//    //function charAt(index) {
+//    //   return  s.charAt(index);
+//    //}
+//    //function split(s2) {
+//    //    return split(s2);
+//    //}
+//    //function concat(s2) {
+//    //  return   s.concat(s2);
+//    //}
+
+//    //function indexOf(s2) {
+//    //    return s.indexOf(s2);
+//    //}
+//    //function includes(s2) {
+//    //    return s.includes(s2);
+//    //}
+
+//    //function lastIndexOf(s2) {
+//    //    return s.lastIndexOf(s2);
+//    //}
+
+//    //function slice(start,end);{
+//    //    return s.slice(start,end);
+//    //}
+
+//    //function substring(from, to); {
+//    //    return s.substring(from,to);
+//    //}
+//    //function subLength(start, length); {
+//    //    return s.substring(start, length);
+//    //}
+
+//    //function startsWith(s2); {
+//    //    return s.startsWith(s2);
+//    //}
+//    //function endWith(s2); {
+//    //    return s.endWith(s2);
+//    //}
+
+//    function replace(s2, replacement) {
+//        return s.replace(new RegExp(s2, 'g'), replacement);
+//    }
+//    function match( s2) {
+//        return s.match(new RegExp(s2, 'g'));
+//    }
+
+//    function upperFirst() {
+//        return s.trim().toUpperCase().replace(s[0], s[0].toUpperCase());
+//    }
+
+//    function lowerFirst() {
+//        return s.trim().toLowerCase().replace(s[0], s[0].toUpperCase());
+//    }
+
+//  //  try {
+//    //return {
+//    //    origin: s,
+//    //        //charAt: charAt,
+//    //        //concat: concat,
+//    //        //splite: splite,
+//    //        //indexOf: indexOf,
+//    //        //includes: includes,
+//    //        //lastIndexOf: lastIndexOf,
+//    //        //substring: substring,
+//    //        //subLength: subLength,
+//    //        //slice: slice,
+//    //        //startsWith: startsWith,
+//    //        //endWith: endWith,
+//    //        //length: s.length,
+//    //        replace: replace,
+//    //        match: match,
+//    //        upperFirst: upperFirst,
+//    //        lowerFirst: lowerFirst
+//    //    }
+// //   } catch (e) {
+// //       return e;
+////    } Rect = [
+
+            ["分隔 截取 初始索引 最后索引 索引之间替换 索引 小写 大写 连接"],
+        ]
+        //"split split 分隔 "
+        //"slice slice 截取 "
+        //"indexOf first 初始索引 "
+        //"lastIndexOf last 最后索引 "
+        //"substring intercept 索引之间"
+        //"replace replace 替换 "
+        //"charAt at  索引 "
+        //"toLowerCase lower 小写 "
+        //"toUpperCase upper  大写 "
+        //"concat connect 连接"<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="550" height="550">
+  <rect x="15" y="15" cx=20, cy=20 width="150" height="150" style="fill:red;stroke:black;stroke-width:1; " />
+	   <text x="135" y="50" font-family="Verdana" font-size="35" fill="blue"  >Hello</text>
+</svg>    <svg  version="1.1">
+        <g
+            inkscape:groupmode="layer"
+            id="layer1">
+            <path
+                inkscape:transform-center-x="-1.7784127e-06"
+                d="m 89.522836,81.045519 -34.44555,-4e-6 -34.445551,4e-6 17.222779,-29.83072 17.222772,-29.830724 17.222771,29.830723 z"
+                sodipodi:type="star"
+                style="fill: #ffffff; stroke: #000000; stroke-width: 1.83715; stroke-miterlimit: 4; stroke-dasharray: none"
+                id="path835-9"
+                sodipodi:sides="3"
+                sodipodi:cx="55.077286"
+                sodipodi:cy="61.158371"
+                sodipodi:r1="39.774296"
+                sodipodi:r2="19.887144"
+                sodipodi:arg1="0.52359878"
+                sodipodi:arg2="1.5707963"
+                inkscape:flatsided="false"
+                inkscape:rounded="0"
+                inkscape:randomized="0"
+                inkscape:transform-center-y="-5.9688762"
+                />
+            <circle
+                style="fill: #ffffff; stroke: #000000; stroke-width: 1.1433; stroke-miterlimit: 4; stroke-dasharray: none"
+                id="path837-7"
+                cx="55.077286"
+                cy="23.045652"
+                r="12.769685" />
+            <circle
+                r="12.769685"
+                cy="81.001961"
+                cx="22.500393"
+                id="path837-9-1"
+                style="fill: #ffffff; stroke: #000000; stroke-width: 1.1433; stroke-miterlimit: 4; stroke-dasharray: none" />
+            <circle
+                r="12.769685"
+                cy="81.001961"
+                cx="87.360207"
+                id="path837-3-4"
+                style="fill: #ffffff; stroke: #000000; stroke-width: 1.1433; stroke-miterlimit: 4; stroke-dasharray: none" />
+            <text
+                id="text836"
+                y="26.89295"
+                x="51.459946"
+                style="font-style: normal; font-weight: normal; font-size: 10.5833px; line-height: 1.25; font-family: sans-serif; fill: #000000; fill-opacity: 1; stroke: none; stroke-width: 0.264583"
+                xml:space="preserve">
+                <tspan
+                    style="stroke-width: 0.264583"
+                    y="26.89295"
+                    x="51.459946"
+                    id="tspan834"
+                    sodipodi:role="line">A</tspan>
+            </text>
+            <text
+                xml:space="preserve"
+                style="font-style: normal; font-weight: normal; font-size: 10.5833px; line-height: 1.25; font-family: sans-serif; fill: #000000; fill-opacity: 1; stroke: none; stroke-width: 0.264583"
+                x="83.706696"
+                y="84.849258"
+                id="text836-0">
+                <tspan
+                    sodipodi:role="line"
+                    id="tspan834-2"
+                    x="83.706696"
+                    y="84.849258"
+                    style="stroke-width: 0.264583">Z</tspan>
+            </text>
+            <text
+                xml:space="preserve"
+                style="font-style: normal; font-weight: normal; font-size: 10.5833px; line-height: 1.25; font-family: sans-serif; fill: #000000; fill-opacity: 1; stroke: none; stroke-width: 0.264583"
+                x="17.268171"
+                y="84.849258"
+                id="text836-2">
+                <tspan
+                    sodipodi:role="line"
+                    id="tspan834-3"
+                    x="17.268171"
+                    y="84.849258"
+                    style="stroke-width: 0.264583">W</tspan>
+            </text>
+        </g>
+
+        
+
+    </svg>
+    <select>
+        <option value="0">请选择分类（Category）</option>
+        <option value="0">亚特兰蒂斯</option>
+        <option value="0">共产党    </option>
+        <option value="0">佛教      </option>
+        <option value="0">日本人    </option>
+        <option value="0">仙家      </option>
+        <option value="0">天主教    </option>
+        <option value="0">伊斯兰教  </option>
+        <option value="0">宗教领袖  </option>
+        <option value="0">宗教人物  </option>
+        <option value="0">朋友      </option>
+        <option value="0">家长      </option>
+        <option value="0">邻居      </option>
+        <option value="0">神话人物  </option>
+        <option value="0">同事      </option>
+        <option value="0">同学      </option>
+        <option value="0">法师      </option>
+        <option value="0">偶像      </option>
+        <option value="0">民主人士  </option>
+        <option value="0">历史人物  </option>
+        <option value="0">老师      </option>
+        <option value="0">电影人物  </option>
+        <option value="0">外星人    </option>
+        <option value="0">动物      </option>
+    </select>
+    <select>
+        <option value="0">已选角色（Roles Chosen）</option>
+    </select>
+    <select id="role_priority" multiple="multiple" class="auto-style4">
+        <option value="-1">临时测试(Dummy)</option>
+        <option value="0">队列安排中(Stack Queue)</option>
+        <option value="0">张疹震癌爱</option>
+        <option value="0">王猛</option>
+        <option value="0">零星眼小鬼妮（upstairs)</option>
+        <option value="0">贾晕封</option>
+        <option value="0">气铅</option>
+        <option value="0">下体</option>
+        <option value="0">腰  </option>
+        <option value="0">头  </option>
+        <option value="0">幻象</option>
+        <option value="0">说话</option>
+        <option value="0">咒</option>
+    </select> this.info = {
+        "name": "role",
+        "type": this.type,
+        "info": {
+            "priority_id": -1,
+            "category_info": {
+                "id": 0,
+                "name": ""
+            },
+
+            "incident_info": {
+                "prioity_id": -1,
+                "desc": ""
+            },
+            "desc": "",
+            "parent_id": 1,
+            "parent_name": "",
+            "id": 0,
+            "name": ""
+        }
+    };
+  
+	
+--------------------------------------------	
+	
+	var Fun = (function ()
+        {
+            //把闭包体（外层函数）赋值给变量Fun，返回一个构造函数（内层函数）  
+            var _a = 1;
+            //闭包体的私有变量 
+            this.a = _a;
+            //闭包体内公共属性a  
+            this.get1 = function ()
+            {    //闭包体内公共方法get1()     
+                return _a;
+            };
+            this.set1 = function (x)
+            {
+                //闭包体内公共方法set1（） 
+                _a = x;
+                $("#info_out").append("get1");
+            };
+            return function ()
+            {
+                //返回的构造函数类    
+                this.get2 = function(){
+                    //返回的公共方法get2()，可以访问私有变量      
+                    return _a;
+                };
+                this.set2 = function(x){
+                    //返回的公共方法set2(x)，可以访问私有变量        
+                    _a = x;
+                };
+            }
+        })();
+        //执行闭包体，返回匿名构造函数结构 
+        //定义类的静态公共方法和属性
+        Fun.get3 = function ()
+        {    //静态公共方法 get3(),返回对公共方法get1()的调用  
+              $("#info_out").append("get3");
+            return get1();
+        };
+        Fun.set3 = function ()
+        {    //静态公共方法 set3(),返回对公共方法set1(x)的调用  
+            set1();
+        }
+        //F.a = a;    //静态公共私有属性 a
+        Fun.get3();s
+
+function Handler(jsonInfo) {
+
+    this.jsonInfo = jsonInfo || JSON.stringify(jsonInfo);
+    this.contentType = "application/json; charset=utf-8";
+   
+    this.success = function (data) {
+
+    }
+    this.error = function (xhr, state, errorThrown) {
+
+    }
+    //this.call = function
+    $.ajax({
+        type: type,
+        url: url,
+        data: jsonInfo,
+        contentType: contentType,
+        //  dataType: "json",
+        //beforeSend: function (data) {
+             
+        //},
+        error: function (xhr, state, errorThrown) {
+            //this.error + "status：" + xhr.status 
+            // //1-正在载入，2-已经载入，3-数据进行交互，4-完成。
+            //this.error +=  "readyState:" + xhr.readyState 
+            //this.error += "statusText:" + xhr.statusText;
+            ////这里是详细的信息
+            //this.error += "responseText：" + xhr.responseText ;
+            //this.error += "textStatus：" + textStatus ;
+            //this.error += errorThrown;
+            this.error(xhr, state, errorThrown);
+        },
+        success: function (data) {
+            this.success(data);
+        }
+    });
+}
+  var jsonInfo = {
+        "name": "role_category",
+        "type": "list",
+        "info": {
+            "priority_id": -1,
+            "category_info": {
+                "id": 0,
+                "name": ""
+            },
+
+            "incident_info": {
+                "prioity_id": -1,
+                "desc": ""
+            },
+            "desc": "",
+            "parent_id": 1,
+            "parent_name": "",
+            "id": 0,
+            "name": ""
+        }
+    };
+Handler.get = function (jsonInfo) {
+    this.url = RequestUrl + Method_Get + ".ashx";
+    this.type = Method_Post;
+    this.jsonInfo = jsonInfo;
+}
+
+Handler.set = function (jsonInfo) {
+    this.url = RequestUrl + Method_Set + ".ashx";
+    this.type = Method_Set;
+    this.jsonInfo = jsonInfo;
+}
+
+         // Handler.get(jsonInfo);
+        alert(jsonInfo.name)
+
+
+	------------------------------------------
+//   function User(){
+//    this.myname = 'fire子海';//公有属性
+//    this.age = 26;
+//    this.do = function(){//特权方法
+//        return this.myname+'学习js';
+//    }
+//}
+//User.eat = function(food){
+//  return '晚餐只有'+food;
+//}
+//User.prototype.alertAge = function(){
+//   alert(this.age);
+//}
+//User.prototype.alertDo = function(){
+//   alert(this.do());//调用特权方法
+//}
+//User.prototype.alertEat = function(food){
+//   alert(User.eat(food));//只能通过对象本身调用静态方法
+//   //alert(this.ear(food))这样调用将出错:this.eat is not a function
+//}
+//var user = new User();
+//user.alertAge();//alert:26
+//user.alertDo();//alert:fire子海学习js
+//user.alertEat('方便面')//alert:晚餐只有方便面       //Business.Role.AddRoleInfo(json);
+        //  var json = JsonConvert.SerializeObject(handler,Formatting.Indented);
+        //Handler jsonHandle = JsonConvert.DeserializeObject<Handler>(json);
+        //int result = -100;
+        //if (jsonHandle.Name.ToLower() == "role")
+        //    result = PoweredSource.Role.AddRoleInfo((RoleInfo)jsonHandle.Info);
+        //else if (jsonHandle.Name.ToLower() == "incident")
+        //    result = PoweredSource.Incidents.AddIncidentInfo((RoleInfo)jsonHandle.Info);
+		
+		<div class="navbar navbar-inverse navbar-fixed-top"  >
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button"
+                        data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">附体事件拓展图（L2）</a>
+                    <span id="eventSpan" style="font-size: 14px;"></span>
+                </div>
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">THE FIVE</a></li>
+                        <li>
+                            <a href="#">THE TWO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+			//network.on("doubleClick", function (params) {
+	//	params.event = "[original event]";
+ //       document.getElementById('eventSpan').innerHTML = '<h2>doubleClick event:</h2>' + JSON.stringify(params, null, 4);
+ //          console.log('click event, getNodeAt returns: '  );
+	//});
+	//network.on("oncontext", function (params) {
+	//	params.event = "[original event]";
+	//	document.getElementById('eventSpan').innerHTML = '<h2>oncontext (right click) event:</h2>' + JSON.stringify(params, null, 4);
+	//});
+	//network.on("dragStart", function (params) {
+	//	// There's no point in displaying this event on screen, it gets immediately overwritten
+	//	params.event = "[original event]";
+	//	console.log('dragStart Event:', params);
+	//	console.log('dragStart event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
+	//});
+	//network.on("dragging", function (params) {
+	//	params.event = "[original event]";
+	//	document.getElementById('eventSpan').innerHTML = '<h2>dragging event:</h2>' + JSON.stringify(params, null, 4);
+	//});
+	//network.on("dragEnd", function (params) {
+	//	params.event = "[original event]";
+	//	document.getElementById('eventSpan').innerHTML = '<h2>dragEnd event:</h2>' + JSON.stringify(params, null, 4);
+	//	console.log('dragEnd Event:', params);
+	//	console.log('dragEnd event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
+	//});
+	//network.on("zoom", function (params) {
+	//	document.getElementById('eventSpan').innerHTML = '<h2>zoom event:</h2>' + JSON.stringify(params, null, 4);
+	//});
+	//network.on("showPopup", function (params) {
+	//	document.getElementById('eventSpan').innerHTML = 'ShowPopup event:' + JSON.stringify(params, null, 4);
+	//});
+	//network.on("hidePopup", function () {
+	//	console.log('hidePopup Event');
+	//});
+	//network.on("select", function (params) {
+	//	console.log('select Event:', params);
+	//});
+	//network.on("selectNode", function (params) {
+	//	console.log('selectNode Event:', params);
+	//});
+	//network.on("selectEdge", function (params) {
+	//	console.log('selectEdge Event:', params);
+	//});
+	//network.on("deselectNode", function (params) {
+	//	console.log('deselectNode Event:', params);
+	//});
+	//network.on("deselectEdge", function (params) {
+	//	console.log('deselectEdge Event:', params);
+	//});
+	//network.on("hoverNode", function (params) {
+	//	console.log('hoverNode Event:', params);
+	//});
+	//network.on("hoverEdge", function (params) {
+	//	console.log('hoverEdge Event:', params);
+	//});
+	//network.on("blurNode", function (params) {
+	//	console.log('blurNode Event:', params);
+	//});
+	//network.on("blurEdge", function (params) {
+	//	console.log('blurEdge Event:', params);
+	//});
+
+  Handlers = {
+            call: function () {
+                    $.ajax({
+                         type: Handler.type,
+                         url: Handler.url,
+                         data: jsonInfo,
+                         contentType: this.contentType,
+                         //  dataType: "json",
+                         //beforeSend: function (data) {
+
+                         //},
+                         error: function (xhr, state, errorThrown) {
+                             //this.error + "status：" + xhr.status 
+                             // //1-正在载入，2-已经载入，3-数据进行交互，4-完成。
+                             //this.error +=  "readyState:" + xhr.readyState 
+                             //this.error += "statusText:" + xhr.statusText;
+                             ////这里是详细的信息
+                             //this.error += "responseText：" + xhr.responseText ;
+                             //this.error += "textStatus：" + textStatus ;
+                             //this.error += errorThrown;
+                             this.error(xhr, state, errorThrown);
+                         },
+                         success: function (data) {
+                           //  this.success(data);
+                         }
+                      });
+            },
+            
+            get: function (json) {
+          //      alert(Handlers.temp);
+　　　　　　    //var cat = {};
+　　　　　　    //cat.name = "大毛";
+　　　　　　    //cat.makeSound = function(){ alert("喵喵喵"); };
+　　　　　　   // return cat;
+                 $("#info_out").append("called");
+            },
+            set: function (json) {
+
+            }
+        };
+	 ///<summary>    
+    /// JObject扩展  
+    /// </summary>  
+    public static class JObjectExtensions
+    {
+        /// <summary>   
+        /// 将JObject转化成字典   
+        /// </summary>    
+        /// <param name="json"></param>    
+
+        /// <returns></returns>  
+        public static IDictionary<string, object> ToDictionary(this JToken json)
+        {
+            var propertyValuePairs = json.ToObject<Dictionary<string, object>>();
+            ProcessJObjectProperties(propertyValuePairs);
+            ProcessJArrayProperties(propertyValuePairs);
+            return propertyValuePairs;
+        }
+        private static void ProcessJObjectProperties(IDictionary<string, object> propertyValuePairs)
+        {
+            var objectPropertyNames = (from property in propertyValuePairs
+                                       let propertyName = property.Key
+                                       let value = property.Value
+                                       where value is JObject
+                                       select propertyName).ToList();
+            objectPropertyNames.ForEach(propertyName => propertyValuePairs[propertyName] = ToDictionary((JObject)propertyValuePairs[propertyName]));
+        }
+        private static void ProcessJArrayProperties(IDictionary<string, object> propertyValuePairs)
+        {
+            var arrayPropertyNames = (from property in propertyValuePairs
+                                      let propertyName = property.Key
+                                      let value = property.Value
+                                      where value is JArray
+                                      select propertyName).ToList();
+            arrayPropertyNames.ForEach(propertyName => propertyValuePairs[propertyName] = ToArray((JArray)propertyValuePairs[propertyName]));
+        }
+        /// <summary>   
+        ///       
+        /// </summary>   
+        /// <param name="array"></param>   
+        /// <returns></returns>      
+        public static object[] ToArray(this JArray array)
+        {
+            return array.ToObject<object[]>().Select(ProcessArrayEntry).ToArray();
+        }
+        private static object ProcessArrayEntry(object value)
+        {
+            if (value is JObject)
+            {
+                return ToDictionary((JObject)value);
+            }
+            if (value is JArray)
+            {
+                return ToArray((JArray)value);
+            }
+            return value;
+        }
+    }
+
+<%@ Application Language="C#" %>
+<%@ Import Namespace="AngelNetwork" %>
+<%@ Import Namespace="System.Web.Optimization" %>
+<%@ Import Namespace="System.Web.Routing" %>
+
+<script runat="server">
+
+    void Application_Start(object sender, EventArgs e)
+    {
+        RouteConfig.RegisterRoutes(RouteTable.Routes);
+        BundleConfig.RegisterBundles(BundleTable.Bundles);
+    }
+
+</script>
