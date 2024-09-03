@@ -1,24 +1,28 @@
-﻿Aymerk
-amoure 
-anemo i L //空间感应
-    HeadFacial.Sense.Part
-中文 一声平 二声杨 三声拐弯 四声降
-英文：a e i o u
-日文 ka mi ku kai kao
+﻿AIMEERK:AYMERK 
+
+ //空间构引
+a~nem^o
+//i I L 
+一声平 二声杨 三声拐弯 四声降
+A IY IA O U 
+KA MI KW KAI KAO
+//KIT KAIT
 i yL 照妖镜 图形识别 三棱镜 
 hf胡夫 之间 剑 金字塔  
 	e E ey eY Ey Anti-Rotate by... 
 　　e y i
-Ni 奶
-Wo 
-Rn rn 肚子有点顶 t d 
-Fallout:Wg dl jG
-Neck
-h hm
-T L S Z S
-wOcAo woRI
+NAI
 
-文字象形 音译 Nivida
+Wo 
+	Rn rn  t d //肚子有点顶
+	Fallout:Wg dl jG
+	Neck
+	h hm
+	T L S Z S
+	wOcAo woRI
+M
+
+象形 音译文字 Nivida
 A a 啊 Nn 嗯 Ee 额 Mm 母 Oo 哦
 A 大写字母 G 物理微粒子下降
 a 声音 气分子结构多 地下的东西网上aO 冲（平衡）
