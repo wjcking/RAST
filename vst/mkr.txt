@@ -1,17 +1,17 @@
 ﻿AIMEERK:AYMERK 
 
- //空间构引
+//空间构引
 a~nem^o
-//i I L 
-一声平 二声杨 三声拐弯 四声降
-A IY IA O U 
-KA MI KW KAI KAO
-//KIT KAIT
-i yL 照妖镜 图形识别 三棱镜 
-hf胡夫 之间 剑 金字塔  
-	e E ey eY Ey Anti-Rotate by... 
-　　e y i
-NAI
+	一声平 二声杨 三声拐弯 四声降
+	A IY IA O U 
+	KA MI KW KAI KAO
+	//KIT KAIT
+	i yL 照妖镜 图形识别 三棱镜 
+	hf胡夫 之间 剑 金字塔  
+		e E ey eY Ey Anti-Rotate by... 
+　　	e y i
+	NAI
+i I L
 
 Wo 
 	Rn rn  t d //肚子有点顶
