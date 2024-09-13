@@ -1,33 +1,20 @@
-﻿*	lxr lxa lxy
-$	slns
-% pls
-& fn
-#	kts
-@ nlus
-^	skr:kl
-_  tzh_ang^wa nsk
-
-? 
-!
+﻿[ksn:tsn:fsn~dsn] 
+(krs:skt^il)
+<stk:skt>
 
 -	ilk
 ~ irk
 
-pst:blt.vls
-. //比力 束予 说明 派生 继承
-: //说明 比力 束予 继承 派生
+*	lxr lxa lxy
+$	slns
+% pls
+& flz:fn
+#	kts
+@ nlus
+^	srk:kl
+_ tzh_ang^wa nsk
 
-[ksn:tsn.fsn.dsn] 
-<stk:skt>	
-(krs:kst^ai)
+? UNKNOWN
+!
+; //
 
-'
-"双引号
-`开单引号
-;分号
-
-+	加号
-,	逗号
-/	斜杠
-\	反斜杠
-=	等号
