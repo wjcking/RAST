@@ -1,4 +1,6 @@
-﻿[ksn:tsn:fsn~dsn] 
+﻿RSK^VD
+
+[ksn:tsn:fsn~dsn] 
 (krs:skt^il)
 <stk:skt>
 
@@ -7,7 +9,8 @@
 
 *	lxr lxa lxy
 $	slns
-% pls
+~ bls^p
+//% pls
 & flz:fn
 #	kts
 @ nlus
