@@ -11,11 +11,12 @@
 $	slns
 ~ bls^p
 //% pls
-& flz:fn
+& vwr
 #	kts
 @ nlus
 ^	srk:kl
 _ tzh_ang^wa nsk
+fn:flz
 
 ? UNKNOWN
 !
