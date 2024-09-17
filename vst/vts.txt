@@ -1,4 +1,4 @@
-﻿RSK^VD
+﻿RST.RSK^VD
 
 [ksn:tsn:fsn~dsn] 
 (krs:skt^il)
@@ -7,16 +7,16 @@
 -	ilk
 ~ irk
 
-*	lxr lxa lxy
-$	slns
-~ bls^p
-//% pls
-& vwr
-#	kts
-@ nlus
-^	srk:kl
-_ tzh_ang^wa nsk
-fn:flz
+*	//lxr lxa lxy
+$	//slns
+~ //dls bls^p pls
+& //vwr vrsd vrsk
+#	z zl h kts
+@ //nlus
+^	//srk:kl
+_ //tzh_ang^wa nsk
+% 
+fn//flz
 
 ? UNKNOWN
 !
