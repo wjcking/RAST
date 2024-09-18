@@ -1,21 +1,19 @@
-﻿RST.RSK^VD
+﻿RST^VD
+~IRK-ILK
 
-[ksn:tsn:fsn~dsn] 
+[ksn~fsn-dsn:tsn] 
 (krs:skt^il)
 <stk:skt>
-
--	ilk
-~ irk
 
 *	//lxr lxa lxy
 $	//slns
 ~ //dls bls^p pls
 & //vwr vrsd vrsk
-#	z zl h kts
+#	//z zl h kts
 @ //nlus
 ^	//srk:kl
-_ //tzh_ang^wa nsk
-% 
+_  //tzh_ang^wa nsk
+% //pst.knt
 fn//flz
 
 ? UNKNOWN
