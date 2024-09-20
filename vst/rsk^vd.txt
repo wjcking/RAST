@@ -38,4 +38,4 @@ End index z
 C start
 Z end
 K bust out
-D 度~ 堵
+D 度~ 堵 //Dotell.Heuristic
